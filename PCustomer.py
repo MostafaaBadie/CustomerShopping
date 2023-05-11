@@ -32,7 +32,7 @@ unsafe_allow_html=True)
     st.write('- <p style="font-size:26px;"> Feel free to contact me to recieve the dataset & python notebook</p>',
 unsafe_allow_html=True)
 
-    image =Image.open(r'C:\Users\mostafa\OneDrive\Desktop\Linkedin\Customers\Pimage.png')
+    image =Image.open(r'Pimage.png')
     coll1, coll2, coll3 = st.columns([3,6,1])
 
     with coll1:
