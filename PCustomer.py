@@ -121,7 +121,7 @@ if option == 'Bivariate  & Multivariate Analysis':
         df1=df1.reset_index()
         
         fig4= px.bar( df1 , x=df1['Category'] ,
-            y= df1['Total']
+            y= df1['count']
         , color= option2
         , barmode = 'group')
         fig4.update_xaxes(title='Categories ')
@@ -143,7 +143,7 @@ if option == 'Bivariate  & Multivariate Analysis':
         df2.rename(columns={'Payment_method':'Total'}, inplace = True)
         df2 = df2.reset_index()
         fig5= px.bar( df2 , x=(df2[option3]) ,
-           y= df2['Total']
+           y= df2['count']
         , color='Payment_method'
         , barmode = 'group')
         fig5.update_xaxes(title=option3)
@@ -172,7 +172,8 @@ if option == 'Bivariate  & Multivariate Analysis':
         fig9=px.bar(df5 , x='Year' , y='Total_payment' , 
         color='Shopping_mall'
         ,barmode='group')
-        st.plotly_chart
+        st.plotly_chart(fig9)
+        
 
             
             
