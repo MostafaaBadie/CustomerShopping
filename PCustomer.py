@@ -13,6 +13,7 @@ df = pd.read_csv(r'NewData.csv')
 st.set_page_config(layout='wide' )
 
 # sidebar
+st.sidebar.header('Choose Page')
 option = st.sidebar.selectbox(
     "Select an option",
     ["Home",
