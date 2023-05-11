@@ -14,6 +14,7 @@ st.set_page_config(layout='wide' )
 
 # sidebar
 st.sidebar.header('Choose Page')
+st.sidebar.subheader('Each page has different options')
 option = st.sidebar.selectbox(
     "Select an option",
     ["Home",
